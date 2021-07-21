@@ -81,6 +81,10 @@ body {
           transform: translateY(-50%);
 }
 
+.info .lavel .lavelText div {
+  width: 105px;
+}
+
 .info .startgame {
   height: 100%;
   width: 50%;

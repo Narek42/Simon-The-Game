@@ -9,6 +9,7 @@ new Vue({
     finishRound: 0,
     clickDiv: [],
     gameing: true,
+    audio: 0,
     msg: "",
     i: 0,
   },
@@ -66,7 +67,9 @@ new Vue({
       const click = event.currentTarget;
       click.style.opacity = 1;
       setTimeout(() => {
-        sound.play();
+        if (this.audio) {
+          sound.play();
+        }
         click.style.opacity = "0.3";
       }, 90);
       if (this.clickDiv.length > 0) {
@@ -108,5 +111,6 @@ new Vue({
   },
   created: function () {
     this.setRandomColor();
+    console.log(this.audio);
   },
 });
