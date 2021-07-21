@@ -1,2 +1,2 @@
 # Simon-The-Game
-use Vue.js and JS
+use HTML, CSCC, VueJS and JavaScript
