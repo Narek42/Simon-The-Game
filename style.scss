@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+body {
+  user-select: none;
+}
+.container {
+  width: 315px;
+  display: grid;
+  grid-template-columns: 150px 150px;
+  padding: 10px;
+  grid-gap: 5px;
+  margin: auto;
+  .my_audio {
+    display: none;
+  }
+  .button {
+    width: 150px;
+    height: 150px;
+    background: purple;
+    margin: auto;
+    opacity: 0.3;
+    cursor: pointer;
+  }
+}
+.round {
+  width: 315px;
+  margin: auto;
+  text-align: center;
+  .msg {
+    color: red;
+  }
+  p {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 21px;
+    font-weight: 900;
+    font-family: "Roboto", sans-serif;
+  }
+}
+.active:active {
+  opacity: 1;
+}
+.info {
+  width: 24%;
+  height: 120px;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  .lavel {
+    width: 50%;
+    // height: 120px;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    height: 100%;
+    width: 50%;
+    position: relative;
+    .lavelText {
+      width: 64%;
+      text-align: left;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+  .startgame {
+    height: 100%;
+    width: 50%;
+    position: relative;
+    .start {
+      border: none;
+      width: 150px;
+      height: 40px;
+      background: aqua;
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-family: "Roboto", sans-serif;
+      font-size: 16px;
+      transition: all 0.3s;
+    }
+    .start:active {
+      font-size: 18px;
+    }
+  }
+}

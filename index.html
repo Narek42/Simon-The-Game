@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Simon The Game</title>
+    <link rel="shortcut icon" href="/clipart2168538.png" />
+  </head>
+  <body>
+    <div id="main">
+      <div class="container" id="container">
+        <div data-id="0" id="button" class="button"></div>
+        <div data-id="1" id="button" class="button"></div>
+        <div data-id="2" id="button" class="button"></div>
+        <div data-id="3" id="button" class="button"></div>
+      </div>
+      <div class="round">
+        <p>Роунд: {{ round }}</p>
+        <p class="msg">{{ msg }}</p>
+      </div>
+      <div class="info" v-if="gameing">
+        <div class="lavel">
+          <div class="lavelText">
+            <div class="">
+              <input
+                id="laveleasy"
+                v-model="lavel"
+                name="test"
+                value="1500"
+                type="radio"
+                checked
+              />
+              <label>Легкий</label>
+            </div>
+            <div class="">
+              <input v-model="lavel" name="test" value="1000" type="radio" />
+              <label>Средний</label>
+            </div>
+            <div class="">
+              <input v-model="lavel" name="test" value="400" type="radio" />
+              <label>Сложный</label>
+            </div>
+          </div>
+        </div>
+        <div class="startgame">
+          <button v-on:click="startGame" class="start">Старт</button>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.12/vue.min.js"
+      integrity="sha512-BKbSR+cfyxLdMAsE0naLReFSLg8/pjbgfxHh/k/kUC82Hy7r6HtR5hLhobaln2gcTvzkyyehrdREdjpsQwy2Jw=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.1.1/howler.min.js"></script>
+  </body>
+</html>
